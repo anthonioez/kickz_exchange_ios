@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4608" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto_Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CountryViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoT-bb-BpU" userLabel="countryLabel">
+                        <rect key="frame" x="10" y="12.666666666666666" width="245" height="18.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyw-Fn-HLt" userLabel="codeLabel">
+                        <rect key="frame" x="260" y="13.666666666666664" width="50" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="g2w-nj-2Da"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="GoT-bb-BpU" secondAttribute="centerY" id="Dj4-fV-jkT"/>
+                    <constraint firstAttribute="centerY" secondItem="dyw-Fn-HLt" secondAttribute="centerY" id="Ft4-fn-ipk"/>
+                    <constraint firstAttribute="trailing" secondItem="dyw-Fn-HLt" secondAttribute="trailing" constant="10" id="K67-V8-HuP"/>
+                    <constraint firstItem="GoT-bb-BpU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Mqe-0Q-jYT"/>
+                    <constraint firstItem="dyw-Fn-HLt" firstAttribute="leading" secondItem="GoT-bb-BpU" secondAttribute="trailing" constant="5" id="QYk-fQ-3kX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="codeLabel" destination="dyw-Fn-HLt" id="TCk-tv-2uF"/>
+                <outlet property="countryLabel" destination="GoT-bb-BpU" id="7sb-dA-Eth"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="-17"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4608" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto_Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogViewController">
+            <connections>
+                <outlet property="mainView" destination="J2k-bK-sBe" id="22a-5K-uIQ"/>
+                <outlet property="messageLabel" destination="Glg-yI-cln" id="h8U-Hb-x1e"/>
+                <outlet property="navBar" destination="VUj-No-zDu" id="jaX-gx-HiM"/>
+                <outlet property="navItem" destination="5kt-eH-W5C" id="RIa-WV-j0y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2k-bK-sBe">
+                    <rect key="frame" x="45" y="262" width="300" height="320"/>
+                    <subviews>
+                        <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUj-No-zDu">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" red="0.68655574321746826" green="0.026667207479476929" blue="0.1316571831703186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </textAttributes>
+                            <items>
+                                <navigationItem title="Dialog Box" id="5kt-eH-W5C"/>
+                            </items>
+                        </navigationBar>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5O2-5g-LPc">
+                            <rect key="frame" x="5" y="49" width="290" height="1"/>
+                            <color key="backgroundColor" red="0.68655574321746826" green="0.026667207479476929" blue="0.1316571831703186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="HBh-Qd-5I5"/>
+                                <constraint firstAttribute="width" constant="290" id="dCC-XH-lcx"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Glg-yI-cln">
+                            <rect key="frame" x="5" y="55" width="290" height="214"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda..</mutableString>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sem-dD-pCc">
+                            <rect key="frame" x="5" y="274" width="290" height="1"/>
+                            <color key="backgroundColor" red="0.68655574321746826" green="0.026667207479476929" blue="0.1316571831703186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Ily-h1-5W8"/>
+                                <constraint firstAttribute="width" constant="290" id="RCy-Xk-mxG"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1j-m4-IRy">
+                            <rect key="frame" x="100" y="280" width="100" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="PC2-9i-IA6"/>
+                                <constraint firstAttribute="height" constant="35" id="gBT-Yf-I0P"/>
+                            </constraints>
+                            <state key="normal" title="OK" backgroundImage="register_btn.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onOK:" destination="-1" eventType="touchUpInside" id="rhO-uc-u8c"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="x1j-m4-IRy" firstAttribute="top" secondItem="Glg-yI-cln" secondAttribute="bottom" constant="5" id="27P-Zl-z5R"/>
+                        <constraint firstAttribute="width" constant="300" id="9AF-Cw-BDE"/>
+                        <constraint firstAttribute="width" constant="320" id="T4m-vv-2eZ"/>
+                        <constraint firstItem="5O2-5g-LPc" firstAttribute="top" secondItem="VUj-No-zDu" secondAttribute="bottom" constant="5" id="X2h-JR-aL4"/>
+                        <constraint firstAttribute="centerX" secondItem="5O2-5g-LPc" secondAttribute="centerX" id="YGn-ib-EM2"/>
+                        <constraint firstAttribute="centerX" secondItem="sem-dD-pCc" secondAttribute="centerX" id="aoe-nJ-N6s"/>
+                        <constraint firstItem="VUj-No-zDu" firstAttribute="top" secondItem="J2k-bK-sBe" secondAttribute="top" id="apn-QI-2pp"/>
+                        <constraint firstItem="x1j-m4-IRy" firstAttribute="top" secondItem="sem-dD-pCc" secondAttribute="bottom" constant="5" id="bHJ-Xv-qkG"/>
+                        <constraint firstAttribute="bottom" secondItem="x1j-m4-IRy" secondAttribute="bottom" constant="5" id="lA3-Ei-en9"/>
+                        <constraint firstAttribute="trailing" secondItem="Glg-yI-cln" secondAttribute="trailing" constant="5" id="lBv-oQ-I04"/>
+                        <constraint firstItem="sem-dD-pCc" firstAttribute="top" secondItem="Glg-yI-cln" secondAttribute="bottom" constant="5" id="m9U-mn-H7Q"/>
+                        <constraint firstAttribute="centerX" secondItem="x1j-m4-IRy" secondAttribute="centerX" id="qoI-mC-j5P"/>
+                        <constraint firstItem="Glg-yI-cln" firstAttribute="leading" secondItem="J2k-bK-sBe" secondAttribute="leading" constant="5" id="rFg-dh-k8G"/>
+                        <constraint firstAttribute="height" constant="320" id="rNk-KS-y9H"/>
+                        <constraint firstItem="Glg-yI-cln" firstAttribute="top" secondItem="VUj-No-zDu" secondAttribute="bottom" constant="5" id="syj-TN-NGP"/>
+                        <constraint firstItem="VUj-No-zDu" firstAttribute="leading" secondItem="J2k-bK-sBe" secondAttribute="leading" id="tIM-v6-abv"/>
+                        <constraint firstAttribute="trailing" secondItem="VUj-No-zDu" secondAttribute="trailing" id="tgc-6G-uiK"/>
+                        <constraint firstItem="Glg-yI-cln" firstAttribute="top" secondItem="5O2-5g-LPc" secondAttribute="bottom" constant="5" id="yuK-KH-LiN"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="T4m-vv-2eZ"/>
+                            <exclude reference="syj-TN-NGP"/>
+                            <exclude reference="27P-Zl-z5R"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="J2k-bK-sBe" secondAttribute="centerX" id="SJ3-VK-gav"/>
+                <constraint firstAttribute="centerY" secondItem="J2k-bK-sBe" secondAttribute="centerY" id="W1m-cn-BeU"/>
+                <constraint firstItem="J2k-bK-sBe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WSH-Zt-tc5"/>
+                <constraint firstAttribute="trailing" secondItem="J2k-bK-sBe" secondAttribute="trailing" id="caQ-gu-wuF"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="WSH-Zt-tc5"/>
+                    <exclude reference="caQ-gu-wuF"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-16" y="-17"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="register_btn.png" width="127.84040069580078" height="35.192020416259766"/>
+    </resources>
+</document>

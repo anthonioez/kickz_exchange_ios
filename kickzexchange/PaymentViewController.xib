@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4608" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController">
+            <connections>
+                <outlet property="navBar" destination="vdD-s3-Mka" id="CrJ-RT-JiF"/>
+                <outlet property="navItem" destination="J1c-qR-VcH" id="gPl-lV-IDH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kickz_register_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gc3-Mk-Q2o">
+                    <rect key="frame" x="0.0" y="20" width="390" height="824"/>
+                </imageView>
+                <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-s3-Mka">
+                    <rect key="frame" x="0.0" y="20" width="390" height="44"/>
+                    <color key="backgroundColor" red="0.68655574321746826" green="0.026667207479476929" blue="0.1316571831703186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <navigationItem title="Payment Verification" id="J1c-qR-VcH"/>
+                    </items>
+                </navigationBar>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qL-uE-E5Y">
+                    <rect key="frame" x="0.0" y="64" width="390" height="760"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i59-TZ-Aq1">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="446"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="446" id="tca-xy-U4w"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="i59-TZ-Aq1" firstAttribute="top" secondItem="0qL-uE-E5Y" secondAttribute="top" id="LzR-Jh-wwt"/>
+                        <constraint firstAttribute="trailing" secondItem="i59-TZ-Aq1" secondAttribute="trailing" id="RR0-hl-6XD"/>
+                        <constraint firstAttribute="bottom" secondItem="i59-TZ-Aq1" secondAttribute="bottom" id="cGX-2s-IVd"/>
+                        <constraint firstItem="i59-TZ-Aq1" firstAttribute="leading" secondItem="0qL-uE-E5Y" secondAttribute="leading" id="inJ-jm-WiR"/>
+                        <constraint firstAttribute="centerX" secondItem="i59-TZ-Aq1" secondAttribute="centerX" id="o6k-kl-u3x"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gc3-Mk-Q2o" secondAttribute="trailing" id="AcG-BN-XVL"/>
+                <constraint firstItem="0qL-uE-E5Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D40-cg-WXb"/>
+                <constraint firstItem="vdD-s3-Mka" firstAttribute="width" secondItem="i59-TZ-Aq1" secondAttribute="width" id="E23-W9-hDt"/>
+                <constraint firstItem="0qL-uE-E5Y" firstAttribute="top" secondItem="vdD-s3-Mka" secondAttribute="bottom" id="Fxv-05-yeh"/>
+                <constraint firstItem="gc3-Mk-Q2o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="HvJ-MA-Qga"/>
+                <constraint firstAttribute="trailing" secondItem="0qL-uE-E5Y" secondAttribute="trailing" id="IuH-i7-NVc"/>
+                <constraint firstAttribute="trailing" secondItem="vdD-s3-Mka" secondAttribute="trailing" id="RSy-Sw-sE3"/>
+                <constraint firstItem="vdD-s3-Mka" firstAttribute="width" secondItem="0qL-uE-E5Y" secondAttribute="width" id="VFs-xR-ycE"/>
+                <constraint firstAttribute="bottom" secondItem="gc3-Mk-Q2o" secondAttribute="bottom" id="ZHu-sQ-ca6"/>
+                <constraint firstItem="vdD-s3-Mka" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="avb-8C-MJZ"/>
+                <constraint firstItem="gc3-Mk-Q2o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cZ7-tU-6YN"/>
+                <constraint firstAttribute="bottom" secondItem="0qL-uE-E5Y" secondAttribute="bottom" constant="20" id="pgg-nV-uA1"/>
+                <constraint firstItem="vdD-s3-Mka" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qRz-5j-jlP"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <point key="canvasLocation" x="294" y="300"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kickz_register_bg.png" width="194.39999389648438" height="345.60000610351562"/>
+    </resources>
+</document>

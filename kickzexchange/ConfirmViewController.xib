@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4608" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto_Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmViewController">
+            <connections>
+                <outlet property="codeText" destination="E8H-YL-gma" id="CV1-w7-03p"/>
+                <outlet property="navBar" destination="vdD-s3-Mka" id="CrJ-RT-JiF"/>
+                <outlet property="navItem" destination="J1c-qR-VcH" id="gPl-lV-IDH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kickz_register_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gc3-Mk-Q2o">
+                    <rect key="frame" x="0.0" y="20" width="390" height="824"/>
+                </imageView>
+                <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-s3-Mka">
+                    <rect key="frame" x="0.0" y="20" width="390" height="44"/>
+                    <color key="backgroundColor" red="0.68655574321746826" green="0.026667207479476929" blue="0.1316571831703186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <navigationItem title="Phone Verification" id="J1c-qR-VcH"/>
+                    </items>
+                </navigationBar>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qL-uE-E5Y">
+                    <rect key="frame" x="0.0" y="64" width="390" height="760"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i59-TZ-Aq1">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="439"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you an SMS with a code." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="3NJ-Ob-AnK">
+                                    <rect key="frame" x="55" y="20" width="280" height="16.333333333333329"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="280" id="WRS-gI-IcK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To complete the phone verification, please enter the 6 digit activation code." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Epp-rj-xk2">
+                                    <rect key="frame" x="55" y="46.333333333333329" width="280" height="32.666666666666671"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="280" id="dFP-27-D9r"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-bl-veD">
+                                    <rect key="frame" x="150" y="119" width="90" height="40"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E8H-YL-gma" userLabel="codeText">
+                                            <rect key="frame" x="5" y="5" width="80" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="9b8-gu-8O2"/>
+                                                <constraint firstAttribute="width" constant="80" id="Aw5-B3-XAc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                            <connections>
+                                                <action selector="onConfirm:" destination="-1" eventType="editingDidEndOnExit" id="Lda-O7-r3y"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="A0y-bo-POt"/>
+                                        <constraint firstAttribute="centerY" secondItem="E8H-YL-gma" secondAttribute="centerY" id="XBm-aR-KEa"/>
+                                        <constraint firstAttribute="width" constant="90" id="ffe-Sy-aTL"/>
+                                        <constraint firstAttribute="centerX" secondItem="E8H-YL-gma" secondAttribute="centerX" id="sCj-zZ-pcy"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="L0m-bl-veD" secondAttribute="centerX" id="0Ax-lf-7h3"/>
+                                <constraint firstItem="L0m-bl-veD" firstAttribute="top" secondItem="Epp-rj-xk2" secondAttribute="bottom" constant="40" id="Gxk-lB-Hne"/>
+                                <constraint firstItem="3NJ-Ob-AnK" firstAttribute="top" secondItem="i59-TZ-Aq1" secondAttribute="top" constant="20" id="O16-ST-WKB"/>
+                                <constraint firstAttribute="centerX" secondItem="3NJ-Ob-AnK" secondAttribute="centerX" id="cuY-KV-gc9"/>
+                                <constraint firstAttribute="centerX" secondItem="Epp-rj-xk2" secondAttribute="centerX" id="kWq-9E-Nhn"/>
+                                <constraint firstAttribute="bottom" secondItem="L0m-bl-veD" secondAttribute="bottom" constant="280" id="qMZ-Rz-kFB"/>
+                                <constraint firstItem="Epp-rj-xk2" firstAttribute="top" secondItem="3NJ-Ob-AnK" secondAttribute="bottom" constant="10" id="qxs-fq-la5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="i59-TZ-Aq1" firstAttribute="top" secondItem="0qL-uE-E5Y" secondAttribute="top" id="LzR-Jh-wwt"/>
+                        <constraint firstAttribute="trailing" secondItem="i59-TZ-Aq1" secondAttribute="trailing" id="RR0-hl-6XD"/>
+                        <constraint firstAttribute="bottom" secondItem="i59-TZ-Aq1" secondAttribute="bottom" id="cGX-2s-IVd"/>
+                        <constraint firstItem="i59-TZ-Aq1" firstAttribute="leading" secondItem="0qL-uE-E5Y" secondAttribute="leading" id="inJ-jm-WiR"/>
+                        <constraint firstAttribute="centerX" secondItem="i59-TZ-Aq1" secondAttribute="centerX" id="o6k-kl-u3x"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gc3-Mk-Q2o" secondAttribute="trailing" id="AcG-BN-XVL"/>
+                <constraint firstItem="0qL-uE-E5Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D40-cg-WXb"/>
+                <constraint firstItem="vdD-s3-Mka" firstAttribute="width" secondItem="i59-TZ-Aq1" secondAttribute="width" id="E23-W9-hDt"/>
+                <constraint firstItem="0qL-uE-E5Y" firstAttribute="top" secondItem="vdD-s3-Mka" secondAttribute="bottom" id="Fxv-05-yeh"/>
+                <constraint firstItem="gc3-Mk-Q2o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="HvJ-MA-Qga"/>
+                <constraint firstAttribute="trailing" secondItem="0qL-uE-E5Y" secondAttribute="trailing" id="IuH-i7-NVc"/>
+                <constraint firstAttribute="trailing" secondItem="vdD-s3-Mka" secondAttribute="trailing" id="RSy-Sw-sE3"/>
+                <constraint firstItem="vdD-s3-Mka" firstAttribute="width" secondItem="0qL-uE-E5Y" secondAttribute="width" id="VFs-xR-ycE"/>
+                <constraint firstAttribute="bottom" secondItem="gc3-Mk-Q2o" secondAttribute="bottom" id="ZHu-sQ-ca6"/>
+                <constraint firstItem="vdD-s3-Mka" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="avb-8C-MJZ"/>
+                <constraint firstItem="gc3-Mk-Q2o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cZ7-tU-6YN"/>
+                <constraint firstAttribute="bottom" secondItem="0qL-uE-E5Y" secondAttribute="bottom" constant="20" id="pgg-nV-uA1"/>
+                <constraint firstItem="vdD-s3-Mka" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qRz-5j-jlP"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <point key="canvasLocation" x="294" y="300"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kickz_register_bg.png" width="194.39999389648438" height="345.60000610351562"/>
+    </resources>
+</document>
